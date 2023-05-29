@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SINGAPORE Tour</title>
+    <style>
+      button{
+          background-color: aqua;
+          text-align: center;
+          height: 25px;
+          font-weight: bold;
+      }
+      h2{
+          background-color: aqua;
+          text-align: center;
+          height: 35px;
+      }
+      body{
+          /* background-color: #770080; */
+          width: 80%;
+      }
+      form{
+          /* margin:20px 10px; */
+          background-color:rgb(181, 52, 131);
+      }
+      table,h2,button{
+          margin: 10px 20px;
+          border-radius: 5px;
+          width: 95%;
+      }
+      table{
+          border: 2px solid black;
+          background-color: white;
+          height: 400px;
+      }
+      td{
+          border: 2px solid black;
+          color:green;
+          font-size: large;
+          font-weight: bold;
+          border-radius: 5px;
+      }
+  </style>
+  </head>
+  <body>
+    <form action="">
+      <div><h2>SINGAPORE TOURISM</h2></div>
+      <div>
+        <table>
+          <tr>
+            <td><label for="">Name</label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Phone no</label></td>
+            <td><input type="tel" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Email ID</label></td>
+            <td><input type="mail" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Number of Persons</label></td>
+            <td><input type="number" id="person" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Prefer Stay</label></td>
+            <td>
+              <input type="radio" name="stay" id="yes" /><label for="">Yes</label>
+              <input type="radio" name="stay" id="no" /><label for="">No</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Number of Days Stay</label></td>
+            <td><input type="number" id="staydays" /></td>
+          </tr>
+          <tr>
+            <td rowspan="6">
+              <label for="">Places you would like to visit</label>
+            </td>
+            <td>
+              <input type="checkbox" id="checkbox1" value="350" /><label for="checkbox1">Places of Pilgrimage</label>
+              <br />
+              <input type="checkbox" id="checkbox2" value="430" /><label for="checkbox2">Places of Heritage</label>
+              <br />
+              <input type="checkbox" id="checkbox3" value="780" /><label for="checkbox3">Hills</label>
+              <br />
+              <input type="checkbox" id="checkbox4" value="1200" /><label for="checkbox4">Falls</label>
+              <br />
+              <input type="checkbox" id="checkbox5" value="270" /><label for="checkbox5">Beach</label>
+              <br />
+              <input type="checkbox" id="checkbox6" value="4500" /><label for="checkbox6">Places of Adventures</label>
+            </td>
+          </tr>
+        </table>
+        <button id="btn" onclick="calculateCost()">Calculate Cost</button>
+        <p id="output"></p>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
